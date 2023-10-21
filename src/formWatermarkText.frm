@@ -1,6 +1,6 @@
 VERSION 5.00
 Begin {C62A69F0-16DC-11CE-9E98-00AA00574A4F} formWatermarkText 
-   Caption         =   "UserForm1"
+   Caption         =   "Generate watermarked PDFs - specify watermark text"
    ClientHeight    =   7545
    ClientLeft      =   120
    ClientTop       =   465
