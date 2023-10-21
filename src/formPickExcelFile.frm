@@ -1,6 +1,6 @@
 VERSION 5.00
 Begin {C62A69F0-16DC-11CE-9E98-00AA00574A4F} formPickExcelFile 
-   Caption         =   "UserForm1"
+   Caption         =   "Generate watermarked PDFs - select list source"
    ClientHeight    =   7755
    ClientLeft      =   120
    ClientTop       =   465
@@ -47,13 +47,17 @@ Private Sub btnOK_Click()
     
     boolUseTable = optionUseTable.Value
     excelFilePath = formPickExcelFile.textboxFileName.Value
-    excelTable = cboTables.Value
-    excelColumn = cboColumns.Value
-    userFirstRow = textboxFirstRow.Value
-    userLastRow = textboxLastRow.Value
-    userFirstCol = textboxFirstCol.Value
-    userLastCol = textboxLastCol.Value
-    excelSheet = textboxSheet.Value
+
+    If boolUseTable Then
+        excelTable = cboTables.Value
+        excelColumn = cboColumns.Value
+    Else
+        userFirstRow = textboxFirstRow.Value
+        userLastRow = textboxLastRow.Value
+        userFirstCol = textboxFirstCol.Value
+        userLastCol = textboxLastCol.Value
+        excelSheet = textboxSheet.Value
+    End If
     
     formPickExcelFile.Hide
     formPickPDFPath.Show
