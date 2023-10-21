@@ -18,7 +18,7 @@ Public collectionNames As Collection
 Public Const DEFAULT_COMPANYNAME As String = "Contoso Corp"
 Public Const DEFAULT_WATERMARK As String = "Prepared for {n} on {d}"
 Public Const DEFAULT_PDFPREFIX As String = "Watermarked_"
-' test comment
+' test comment 2
 
 Sub ConvertPPTtoPDFWithTextReplace()
 
